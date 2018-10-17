@@ -106,6 +106,10 @@
  
         player.x += player.velX;
         player.y += player.velY;
+      
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = "black";
+        ctx.beginPath();
  
         if (player.x >= width-player.width) {
             player.x = width-player.width;
