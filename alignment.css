@@ -1,4 +1,5 @@
 body { font-family: impact; background-color: Black; }
 h1 { color: White; }
-p { color: White; text-indent: 10px;}
-.tab { margin-left: 40px; }
+p { color: White; }
+<div class="space_lg">&nbsp;</div>
+.space_lg { width:100px; }
