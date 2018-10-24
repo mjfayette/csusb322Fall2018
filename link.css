@@ -1,7 +1,7 @@
 body { margin: 0; }
 body>header { text-align: center; }
 body>header>nav>ul {
-    margin: 10;
+    margin: 0;
     padding: 0;
     background-color: White;
     list-style-type: none;
