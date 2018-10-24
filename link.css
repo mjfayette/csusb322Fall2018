@@ -15,3 +15,4 @@ body>header>nav>ul>li>a {
     text-decoration: none;
 }
 body>main { padding: 1em; }
+ody>header>nav>ul>li { display: inline-block; }
