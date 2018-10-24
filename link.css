@@ -6,7 +6,7 @@ body>header>nav>ul {
     background-color: White;
     list-style-type: none;
 }
-body>header>nav>ul>li:hover { background-color: Orange; }
+body>header>nav>ul>li:hover { background-color: MidnightBlue; }
 body>header>nav>ul>li:active { background-color: Red; }
 body>header>nav>ul>li>a {
     display: block;
