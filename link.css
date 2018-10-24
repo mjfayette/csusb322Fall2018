@@ -3,10 +3,10 @@ body>header { text-align: center; }
 body>header>nav>ul {
     margin: 0;
     padding: 0;
-    background-color: White;
+    background-color: Black;
     list-style-type: none;
 }
-body>header>nav>ul>li:hover { background-color: MidnightBlue; }
+body>header>nav>ul>li:hover { background-color: Orange; }
 body>header>nav>ul>li:active { background-color: Red; }
 body>header>nav>ul>li>a {
     display: block;
