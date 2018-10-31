@@ -1,4 +1,7 @@
 body { margin: 0; font-family: sans-serif; }
+body>header {
+    text-align: center;
+}
 body>header>nav ul {
     margin: 0;
     padding: 0;
