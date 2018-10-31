@@ -6,7 +6,7 @@ body>header>nav ul {
     margin: 0;
     padding: 0;
     color: White;
-    background-color: DimGray;
+    background-color: Black;
     list-style-type: none;
 }
 body>header>nav a {
@@ -19,7 +19,7 @@ body>header>nav>ul>li:hover>a,
 body>header>nav>ul>li:focus-within>a,
 body>header>nav>ul>li>ul>li>a:hover,
 body>header>nav>ul>li>ul>li>a:focus {
-    background-color: SteelBlue;
+    background-color: Red;
 }
 body>header>nav>ul>li {
     position: relative;
@@ -42,6 +42,6 @@ body>main>div {
     display: inline-block;
     box-sizing: border-box;
     padding: 1em;
-    width: 33.3%;
+    width: 33%;
     vertical-align: top;
 }
