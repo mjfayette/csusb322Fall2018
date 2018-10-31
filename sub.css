@@ -1,4 +1,7 @@
 body { margin: 0; font-family: sans-serif; }
+body>header {
+    text-align: center;
+}
 body>header>nav ul {
     margin: 0;
     padding: 0;
@@ -40,5 +43,4 @@ body>main>div {
     box-sizing: border-box;
     padding: 1em;
     width: 50%;
-    vertical-align: top;
 }
