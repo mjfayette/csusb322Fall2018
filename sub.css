@@ -1,0 +1,37 @@
+body { margin: 0; font-family: sans-serif; }
+body>header>nav ul {
+    margin: 0;
+    padding: 0;
+    color: White;
+    background-color: DimGray;
+    list-style-type: none;
+}
+body>header>nav a {
+    display: block;
+    padding: 1em;
+    color: White;
+    text-decoration: none;
+}
+body>header>nav>ul>li:hover>a,
+body>header>nav>ul>li:focus-within>a,
+body>header>nav>ul>li>ul>li>a:hover,
+body>header>nav>ul>li>ul>li>a:focus {
+    background-color: SteelBlue;
+}
+body>header>nav>ul>li {
+    position: relative;
+    display: inline-block;
+}
+body>header>nav>ul>li>ul {
+    display: none;
+}
+body>header>nav>ul>li:hover>ul,
+body>header>nav>ul>li:focus-within>ul {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    white-space: nowrap;
+}
+body>main {
+    padding: 1em;
+}
