@@ -31,6 +31,11 @@ body>header>nav>ul>li {
         display: inline-block;
     }
 }
+@media print {
+    body>header:first-of-type {
+        display: none;
+    }
+}
 body>header>nav>ul>li>ul {
     display: none;
 }
