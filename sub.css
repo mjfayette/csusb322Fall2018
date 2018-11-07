@@ -25,10 +25,12 @@ body>header>nav>ul>li {
     position: relative;
     display: inline-block;
 }
-body>header>nav>ul>li (max-width: 500px) {
-    position: relative;
-    width: 60px;
-    display: block;
+@media screen and (max-width: 600px;) {
+    body>header>nav>ul>li {
+        position: relative;
+        width: 60px;
+        display: block;
+    }
 }
 body>header>nav>ul>li>ul {
     display: none;
