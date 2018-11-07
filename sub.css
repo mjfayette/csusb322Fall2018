@@ -21,6 +21,10 @@ body>header>nav>ul>li>ul>li>a:hover,
 body>header>nav>ul>li>ul>li>a:focus {
     background-color: Blue;
 }
+body>header>nav>ul>li {
+        position: relative;
+        display: block;
+}
 @media screen and (min-width: 600px) {
     body>header>nav>ul>li {
         position: relative;
