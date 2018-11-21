@@ -6,33 +6,36 @@
         <link rel="stylesheet" href="sub.css">
     </head>
     <body>
-        <div style"width: 200px; heightpx; border: thin solid;"></div>
-        <input id="l" type="button" value="Light">
-        <input id="d" type="button" value="Dark">
+        <p>Select theme:</p>
+        <ul>
+            <li>
+                <input
+                       type="button"
+                       value="light theme"
+                       onclick="apply_theme('light')">
+            </li>
+            <input
+                       type="button"
+                       value="dark theme"
+                       onclick="apply_theme('dark')">
+            <li>
         <script>
-            (function () {
-                var light_button = document.querySelector('#l');
-                var dark_button = document.querySelector('#d');
-                var bg = document.querySelector('body');
-                var art = document.querySelectorAll('body>main');
-                var hd = document.querySelectorAll('body>header>nav ul');
-                function make_light() {
-                    bg.style.backgroundColor = 'white';
-                    art.style.backgroundColor = 'black';
-                    hd.style.backgroundColor = 'black';
-                    hd.style.color = 'white';
-                    localStorage.setItem('color', 'white');
+            (function apply_theme(theme) {
+                var fg_color = '';
+                var bg_color = '';
+                if (theme == null) theme = 'light');
+                if (theme == 'light') {
+                    fg_color = 'black';
+                    bg_color = 'white';
+                } else if theme == 'dark') {
+                    fg_color = 'white';
+                    bg_color = 'black';
                 }
-                function make_dark() {
-                    bg.style.backgroundColor = 'black';
-                    art.style.backgroundColor = 'white';
-                    hd.style.backgroundColor = 'white';
-                    hd.style.color = 'black';
-                    localStorage.setItem('color', 'black');
-                }
-                light_button.addEventListener('click', make_light);
-                dark_button.addEventListener('click', make_dark);
-                bg.style.backgroundColor = localStorage.getItem('color') || 'white';
+                document.body.style.color = fg_color;
+                document.body.style.backgroundColor = bg_color;
+                localStorage.setItem('theme', theme);
+                console.log(saved_theme);
+                apply_theme(saved_theme);
             })();
         </script>
         <header>
