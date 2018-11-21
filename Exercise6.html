@@ -6,21 +6,23 @@
         <link rel="stylesheet" href="sub.css">
     </head>
     <body>
-        <button onclick="myFunction1()">Light</button>
-        <button onclick="myFunction2()">Dark</button>
-        <script type="text/javascript">function myFunction1() {
-        document.body.style.backgroundColor = "white";
-        }
+        <div style"width: 200px; heightpx; border: thin solid;"></div>
+        <input id="l" type="button" value"=Light">
+        <input id="d" type="button" value"=Dark">
+        <script>
+            var light_button = documennt.querySelector('#l');
+            var dark_button = documennt.querySelector('#d');
+            var box = document.querySelector('div');
+            light_button.onclick = function() {
+                box.style.backgroundColor = 'white';
+            }
+            dark_button.onclick = function() {
+                box.style.backgroundColor = 'black';
+            }
+            light_button.addEventListener('click'), make_light);
+            dark_button.addEventListener('click'), make_dark);
+            box.style.backgroundColor = localStorage.getItem('color') || 'white';
         </script>
-        
-        <script type="text/javascript">function myFunction2() {
-        document.body.style.backgroundColor = "black";
-        document.body.style.header.nav ul.backgroundColor = "white";
-        document.body.style.header.nav ul.color = "black";
-        document.body.style.main.color = "white";
-        }
-        </script>
-
         <header>
             <h1>LoL Esports</h1>
             <nav>
