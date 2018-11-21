@@ -13,15 +13,21 @@
             (function () {
                 var light_button = document.querySelector('#l');
                 var dark_button = document.querySelector('#d');
-                var box = document.querySelectorAll('body');
+                var bg = document.querySelector('body');
+                var art = document.querySelectorAll('body>main');
+                var hd = document.querySelectorAll('body>header>nav ul');
                 function make_light() {
-                    box.style.backgroundColor = 'white';
-                    box.style.color = 'black';
+                    bg.style.backgroundColor = 'white';
+                    art.style.backgroundColor = 'black';
+                    hd.style.backgroundColor = 'black';
+                    hd.style.color = 'white';
                     localStorage.setItem('color', 'white');
                 }
                 function make_dark() {
-                    box.style.backgroundColor = 'black';
-                    box.style.color = 'white';
+                    bg.style.backgroundColor = 'black';
+                    art.style.backgroundColor = 'white';
+                    hd.style.backgroundColor = 'white';
+                    hd.style.color = 'black';
                     localStorage.setItem('color', 'black');
                 }
                 light_button.addEventListener('click', make_light);
