@@ -33,8 +33,9 @@
                 }
                 document.body.style.color = fg_color;
                 document.body.style.backgroundColor = bg_color;
+                localStorage.setItem('theme', theme);
             }
-            var saved_theme = localStorage.setItem('theme', theme);
+            var saved_theme = localStorage.setItem('theme');
             console.log(saved_theme);
             apply_theme(saved_theme);
         </script>
