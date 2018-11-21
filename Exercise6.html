@@ -13,13 +13,15 @@
             (function () {
                 var light_button = document.querySelector('#l');
                 var dark_button = document.querySelector('#d');
-                var box = document.querySelector('body');
+                var box = document.querySelectorAll('body');
                 function make_light() {
                     box.style.backgroundColor = 'white';
+                    box.style.color = 'black';
                     localStorage.setItem('color', 'white');
                 }
                 function make_dark() {
                     box.style.backgroundColor = 'black';
+                    box.style.color = 'white';
                     localStorage.setItem('color', 'black');
                 }
                 light_button.addEventListener('click', make_light);
