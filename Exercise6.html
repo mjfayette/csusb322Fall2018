@@ -13,11 +13,13 @@
             var light_button = document.querySelector('#l');
             var dark_button = document.querySelector('#d');
             var box = document.querySelector('div');
-            light_button.onclick = function() {
+            function make_light() {
                 box.style.backgroundColor = 'white';
+                localStorage.setItem('color', 'white');
             }
-            dark_button.onclick = function() {
+            function make_dark() {
                 box.style.backgroundColor = 'black';
+                localStorage.setItem('color', 'black');
             }
             light_button.addEventListener('click', make_light);
             dark_button.addEventListener('click', make_dark);
