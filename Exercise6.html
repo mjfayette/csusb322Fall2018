@@ -19,8 +19,8 @@
             dark_button.onclick = function() {
                 box.style.backgroundColor = 'black';
             }
-            light_button.addEventListener('click'), make_light);
-            dark_button.addEventListener('click'), make_dark);
+            light_button.addEventListener('click', make_light);
+            dark_button.addEventListener('click', make_dark);
             box.style.backgroundColor = localStorage.getItem('color') || 'white';
         </script>
         <header>
