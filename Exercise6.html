@@ -20,7 +20,7 @@
                        onclick="apply_theme('dark')">
             <li>
         <script>
-            (function apply_theme(theme) {
+            function apply_theme(theme) {
                 var fg_color = '';
                 var bg_color = '';
                 if (theme == null) theme = 'light');
@@ -36,7 +36,7 @@
                 localStorage.setItem('theme', theme);
                 console.log(saved_theme);
                 apply_theme(saved_theme);
-            })();
+            };
         </script>
         <header>
             <h1>LoL Esports</h1>
