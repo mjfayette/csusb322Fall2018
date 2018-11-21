@@ -33,10 +33,10 @@
                 }
                 document.body.style.color = fg_color;
                 document.body.style.backgroundColor = bg_color;
-                localStorage.setItem('theme', theme);
-                console.log(saved_theme);
-                apply_theme(saved_theme);
-            };
+            }
+            var saved_theme = localStorage.setItem('theme', theme);
+            console.log(saved_theme);
+            apply_theme(saved_theme);
         </script>
         <header>
             <h1>LoL Esports</h1>
