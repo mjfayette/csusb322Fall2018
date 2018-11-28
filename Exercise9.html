@@ -20,6 +20,18 @@
                            value="blue theme"
                            onclick="apply_theme('blue')">
                 </li>
+                <li>
+                    <input
+                           type="button"
+                           value="green theme"
+                           onclick="apply_theme('blue')">
+                </li>
+                <li>
+                    <input
+                           type="button"
+                           value="orange theme"
+                           onclick="apply_theme('blue')">
+                </li>
             </ul>
         <script>
             function apply_theme(theme) {
@@ -32,6 +44,12 @@
                 } else if (theme == 'blue') {
                     fg_color = 'white';
                     bg_color = 'blue';
+                } else if (theme == 'green') {
+                    fg_color = 'white';
+                    bg_color = 'green';
+                } else if (theme == 'orange') {
+                    fg_color = 'white';
+                    bg_color = 'orange';
                 }
                 document.body.style.color = fg_color;
                 document.body.style.backgroundColor = bg_color;
