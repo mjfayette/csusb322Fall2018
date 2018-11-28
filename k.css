@@ -9,7 +9,7 @@ body>header>nav ul {
     background-color: Black;
     list-style-type: none;
 }
-body>nav ul {
+body> ul {
     margin: 0;
     padding: 0;
     color: White;
@@ -22,16 +22,16 @@ body>header>nav a {
     color: White;
     text-decoration: none;
 }
-body>nav a {
+body> a {
     display: block;
     padding: 1em;
     color: White;
     text-decoration: none;
 }
-body>nav>ul>li:hover>a,
-body>nav>ul>li:focus-within>a,
-body>nav>ul>li>ul>li>a:hover,
-body>nav>ul>li>ul>li>a:focus {
+body>ul>li:hover>a,
+body>ul>li:focus-within>a,
+body>ul>li>ul>li>a:hover,
+body>ul>li>ul>li>a:focus {
     background-color: Blue;
 }
 body>header>nav>ul>li:hover>a,
