@@ -9,7 +9,7 @@ body>header>nav ul {
     background-color: Black;
     list-style-type: none;
 }
-body>nav {
+body>nav ul {
     margin: 0;
     padding: 0;
     color: White;
@@ -28,10 +28,10 @@ body>nav input {
     color: White;
     text-decoration: none;
 }
-body>nav>:hover>input,
-body>nav>:focus-within>input,
-body>nav>input:hover,
-body>nav>input:focus {
+body>nav>ul>li:hover>input,
+body>nav>ul>li:focus-within>input,
+body>nav>ul>li>input:hover,
+body>nav>ul>li>input:focus {
     background-color: White;
 }
 body>header>nav>ul>li:hover>a,
