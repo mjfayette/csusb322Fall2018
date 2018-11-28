@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="k.css">
+    </head>
+    <body>
+        <p>Select theme:</p>
+        <ul>
+            <li>
+                <input
+                       type="button"
+                       value="red theme"
+                       onclick="apply_theme('red')">
+            </li>
+            <li>
+                <input
+                       type="button"
+                       value="blue theme"
+                       onclick="apply_theme('blue')">
+            </li>
+        </ul>
+        <script>
+            function apply_theme(theme) {
+                var fg_color = '';
+                var bg_color = '';
+                if (theme == null) theme = 'red';
+                if (theme == 'red') {
+                    fg_color = 'black';
+                    bg_color = 'red';
+                } else if (theme == 'blue') {
+                    fg_color = 'white';
+                    bg_color = 'blue';
+                }
+                document.body.style.color = fg_color;
+                document.body.style.backgroundColor = bg_color;
+                localStorage.setItem('theme', theme);
+            }
+            var saved_theme = localStorage.getItem('theme');
+            console.log(saved_theme);
+            apply_theme(saved_theme);
+        </script>
+        <header>
+            <h1>LoL Esports</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.lolesports.com/en_US/">Official Esports Website</a>
+                        <ul>
+                            <li><a href="https://watch.na.lolesports.com/schedule?leagues=worlds">Schedule</a></li>
+                            <li><a href="https://watch.na.lolesports.com/vods/worlds/world_championship_2018">Vods</a></li>
+                            <li><a href="https://watch.na.lolesports.com/standings/worlds/world_championship_2018/elim">Standings</a></li>
+                            <li><a href="https://watch.na.lolesports.com/rewards">Rewards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://pickem.na.lolesports.com/en-US#welcome">Pickems</a>
+                        <ul>
+                            <li><a href="https://pickem.na.lolesports.com/en-US#my-picks/bracket">My Picks</a></li>
+                            <li><a href="https://pickem.na.lolesports.com/en-US#leaderboards/everyone">Leaderboards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.lolesports.com/en_US/worlds/world_championship_2018/standings/elim">Remaining Teams</a>
+                        <ul>
+                            <li><a href="https://www.lolesports.com/en_US/worlds/world_championship_2018/teams/fnatic">Fnatic</a></li>
+                            <li><a href="https://www.lolesports.com/en_US/worlds/world_championship_2018/teams/invictus-gaming">Invictus Gaming</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>League of Legends Esports Worlds 2018 Coverage</h2>
+            <div>
+                <h3>Finals are on their way</h3>
+                <p>The final match of Worlds 2018 is on this Friday see the full schedule on the Esports website.</p>
+            </div>
+            <div>
+                <h3>Fnatic vs Invictus Gaming</h3>
+                <p>Who will dominate this worlds? EU vs China this friday.</p>
+            </div>
+            <div>
+                <h3>No Perfect Pickems Remain</h3>
+                <p>After Invictus and G2 won quarter-finals no perfect pickems remain.</p>
+            </div>
+        </main>
+    </body>
+</html>
