@@ -43,6 +43,9 @@ body>header>nav>ul>li>ul>li>a:focus {
 body>header>nav>ul>li {
         display: block;
 }
+body>nav>ul>li {
+        display: block;
+}
 
 @media screen and (min-width: 600px) {
     body>header>nav>ul>li {
