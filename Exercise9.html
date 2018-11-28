@@ -8,32 +8,10 @@
     <body>
         <p>Select theme:</p>
         <nav>
-            <ul>
-                <li>
-                    <input
-                           type="dropdown"
-                           value="red theme"
-                           onclick="apply_theme('red')">
-                </li>
-                <li>
-                    <input
-                           type="dropdown"
-                           value="blue theme"
-                           onclick="apply_theme('blue')">
-                </li>
-                <li>
-                    <input
-                           type="dropdown"
-                           value="green theme"
-                           onclick="apply_theme('green')">
-                </li>
-                <li>
-                    <input
-                           type="dropdown"
-                           value="orange theme"
-                           onclick="apply_theme('orange')">
-                </li>
-            </ul>
+            <input type="button" value="red theme" onclick="apply_theme('red')">
+            <input type="button" value="blue theme" onclick="apply_theme('blue')">
+            <input type="button" value="green theme" onclick="apply_theme('green')">
+            <input type="button" value="orange theme" onclick="apply_theme('orange')">
         </nav>
         <script>
             function apply_theme(theme) {
