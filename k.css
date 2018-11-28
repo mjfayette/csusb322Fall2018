@@ -9,11 +9,30 @@ body>header>nav ul {
     background-color: Black;
     list-style-type: none;
 }
+body>>nav ul {
+    margin: 0;
+    padding: 0;
+    color: White;
+    background-color: Black;
+    list-style-type: none;
+}
 body>header>nav a {
     display: block;
     padding: 1em;
     color: White;
     text-decoration: none;
+}
+body>>nav a {
+    display: block;
+    padding: 1em;
+    color: White;
+    text-decoration: none;
+}
+body>nav>ul>li:hover>a,
+body>nav>ul>li:focus-within>a,
+body>nav>ul>li>ul>li>a:hover,
+body>nav>ul>li>ul>li>a:focus {
+    background-color: Blue;
 }
 body>header>nav>ul>li:hover>a,
 body>header>nav>ul>li:focus-within>a,
