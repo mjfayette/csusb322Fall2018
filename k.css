@@ -9,7 +9,7 @@ body>header>nav ul {
     background-color: Black;
     list-style-type: none;
 }
-body>>nav ul {
+body>nav ul {
     margin: 0;
     padding: 0;
     color: White;
@@ -22,7 +22,7 @@ body>header>nav a {
     color: White;
     text-decoration: none;
 }
-body>>nav a {
+body>nav a {
     display: block;
     padding: 1em;
     color: White;
