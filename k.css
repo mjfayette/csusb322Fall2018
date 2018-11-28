@@ -9,7 +9,7 @@ body>header>nav ul {
     background-color: Black;
     list-style-type: none;
 }
-body>nav ul {
+body>nav input {
     margin: 0;
     padding: 0;
     color: White;
@@ -22,17 +22,17 @@ body>header>nav a {
     color: White;
     text-decoration: none;
 }
-body>nav a {
+body>nav input {
     display: block;
     padding: 1em;
     color: White;
     text-decoration: none;
 }
-body>nav>ul>li:hover>a,
-body>nav>ul>li:focus-within>a,
-body>nav>ul>li>ul>li>a:hover,
-body>nav>ul>li>ul>li>a:focus {
-    background-color: Blue;
+body>nav>:hover>input,
+body>nav>:focus-within>input,
+body>nav>input:hover,
+body>nav>input:focus {
+    background-color: White;
 }
 body>header>nav>ul>li:hover>a,
 body>header>nav>ul>li:focus-within>a,
@@ -43,7 +43,7 @@ body>header>nav>ul>li>ul>li>a:focus {
 body>header>nav>ul>li {
         display: block;
 }
-body>nav>ul>li {
+body>nav {
         display: block;
 }
 
