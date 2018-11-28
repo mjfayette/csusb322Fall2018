@@ -7,20 +7,22 @@
     </head>
     <body>
         <p>Select theme:</p>
-        <ul>
-            <li>
-                <input
-                       type="button"
-                       value="red theme"
-                       onclick="apply_theme('red')">
-            </li>
-            <li>
-                <input
-                       type="button"
-                       value="blue theme"
-                       onclick="apply_theme('blue')">
-            </li>
-        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <input
+                           type="button"
+                           value="red theme"
+                           onclick="apply_theme('red')">
+                </li>
+                <li>
+                    <input
+                           type="button"
+                           value="blue theme"
+                           onclick="apply_theme('blue')">
+                </li>
+            </ul>
+        </nav>
         <script>
             function apply_theme(theme) {
                 var fg_color = '';
